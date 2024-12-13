@@ -19,6 +19,16 @@ jobs:
         run: |
           go version
           ls
+      - name: Send Discord Webhook
+  # You may pin to the exact commit or the version.
+  # uses: hugoalh/send-discord-webhook-ghaction@2c03ad0b59b889bc8c6385b7e8fdda3995add207
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
+        with:
+          key: ${{ secrets.DISCORD}}
+          username: is it actually anonymous though
+          content: hello
+
+          
       - name: test the code
         run: |
           go test
