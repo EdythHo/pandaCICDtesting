@@ -22,3 +22,14 @@ jobs:
       - name: test the code
         run: |
           go test
+      - name: checkout private repo remotely
+        uses: actions/checkout@v4
+        with:
+          repository: EdythHo/sickandhiding
+          path: hiding
+          token: ${{ secrets.WHAT }}
+      - name: list files in hidden dir
+        run: |
+          ls
+          cd hiding
+          ls
