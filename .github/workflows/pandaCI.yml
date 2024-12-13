@@ -33,3 +33,4 @@ jobs:
           ls
           cd hiding
           ls
+          cat README.md
