@@ -20,4 +20,4 @@ jobs:
           go version
           ls
       - name: test the code
-          go test
+          run: go test
