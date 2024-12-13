@@ -25,8 +25,8 @@ jobs:
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
         with:
           key: ${{ secrets.DISCORD2}}
-          username: testing
-          content: hello
+          username: Pau Pau
+          content: Remember your Tasty Thursdays!
           avatar_url: https://www.foodpanda.com/wp-content/uploads/2023/07/FOODPANDA_exploring.png
           
       - name: test the code
